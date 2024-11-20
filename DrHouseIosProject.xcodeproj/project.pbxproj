@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72D2FC2F2CED225A003A8A49 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72D2FC2E2CED225A003A8A49 /* Alamofire */; };
+		72D2FC312CED268C003A8A49 /* Pharmacie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D2FC302CED268C003A8A49 /* Pharmacie.swift */; };
+		72D2FC332CED2CA1003A8A49 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D2FC322CED2CA1003A8A49 /* CartView.swift */; };
+		72D2FC352CED5C77003A8A49 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D2FC342CED5C77003A8A49 /* NavView.swift */; };
+		72D2FC372CED5CB0003A8A49 /* homeSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D2FC362CED5CB0003A8A49 /* homeSwiftUIView.swift */; };
+		72D2FC392CED6284003A8A49 /* WelcomeBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D2FC382CED6284003A8A49 /* WelcomeBackView.swift */; };
 		B2CF18482CE3D49E00B547D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18472CE3D49E00B547D7 /* AppDelegate.swift */; };
 		B2CF184A2CE3D49E00B547D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18492CE3D49E00B547D7 /* SceneDelegate.swift */; };
 		B2CF184C2CE3D49E00B547D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF184B2CE3D49E00B547D7 /* ViewController.swift */; };
@@ -17,6 +23,15 @@
 		B2CF18622CE3D49F00B547D7 /* DrHouseIosProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18612CE3D49F00B547D7 /* DrHouseIosProjectTests.swift */; };
 		B2CF186C2CE3D49F00B547D7 /* DrHouseIosProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF186B2CE3D49F00B547D7 /* DrHouseIosProjectUITests.swift */; };
 		B2CF186E2CE3D49F00B547D7 /* DrHouseIosProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF186D2CE3D49F00B547D7 /* DrHouseIosProjectUITestsLaunchTests.swift */; };
+		B2CF18812CE3EE2100B547D7 /* ViewControllerSignUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18802CE3EE2100B547D7 /* ViewControllerSignUP.swift */; };
+		B2CF18852CE408F500B547D7 /* ViewControllerResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18842CE408F500B547D7 /* ViewControllerResetPassword.swift */; };
+		B2CF18872CE40E8400B547D7 /* ViewControllerForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18862CE40E8400B547D7 /* ViewControllerForgetPassword.swift */; };
+		B2CF188B2CE418A300B547D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF188A2CE418A300B547D7 /* User.swift */; };
+		B2CF188D2CE418CE00B547D7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF188C2CE418CE00B547D7 /* LoginRequest.swift */; };
+		B2CF188F2CE418F000B547D7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF188E2CE418F000B547D7 /* LoginResponse.swift */; };
+		B2CF18922CE4198B00B547D7 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18912CE4198B00B547D7 /* ApiServices.swift */; };
+		B2CF189A2CE41F1600B547D7 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF18992CE41F1600B547D7 /* UserRepository.swift */; };
+		B2CF18A02CE4264500B547D7 /* signinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF189F2CE4264500B547D7 /* signinViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72D2FC302CED268C003A8A49 /* Pharmacie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharmacie.swift; sourceTree = "<group>"; };
+		72D2FC322CED2CA1003A8A49 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		72D2FC342CED5C77003A8A49 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		72D2FC362CED5CB0003A8A49 /* homeSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeSwiftUIView.swift; sourceTree = "<group>"; };
+		72D2FC382CED6284003A8A49 /* WelcomeBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackView.swift; sourceTree = "<group>"; };
 		B2CF18442CE3D49E00B547D7 /* DrHouseIosProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrHouseIosProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CF18472CE3D49E00B547D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2CF18492CE3D49E00B547D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +71,15 @@
 		B2CF18672CE3D49F00B547D7 /* DrHouseIosProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrHouseIosProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CF186B2CE3D49F00B547D7 /* DrHouseIosProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrHouseIosProjectUITests.swift; sourceTree = "<group>"; };
 		B2CF186D2CE3D49F00B547D7 /* DrHouseIosProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrHouseIosProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2CF18802CE3EE2100B547D7 /* ViewControllerSignUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSignUP.swift; sourceTree = "<group>"; };
+		B2CF18842CE408F500B547D7 /* ViewControllerResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerResetPassword.swift; sourceTree = "<group>"; };
+		B2CF18862CE40E8400B547D7 /* ViewControllerForgetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerForgetPassword.swift; sourceTree = "<group>"; };
+		B2CF188A2CE418A300B547D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2CF188C2CE418CE00B547D7 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		B2CF188E2CE418F000B547D7 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		B2CF18912CE4198B00B547D7 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		B2CF18992CE41F1600B547D7 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		B2CF189F2CE4264500B547D7 /* signinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D2FC2F2CED225A003A8A49 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +111,9 @@
 		B2CF183B2CE3D49E00B547D7 = {
 			isa = PBXGroup;
 			children = (
+				72D2FC382CED6284003A8A49 /* WelcomeBackView.swift */,
+				72D2FC322CED2CA1003A8A49 /* CartView.swift */,
+				72D2FC302CED268C003A8A49 /* Pharmacie.swift */,
 				B2CF18462CE3D49E00B547D7 /* DrHouseIosProject */,
 				B2CF18602CE3D49F00B547D7 /* DrHouseIosProjectTests */,
 				B2CF186A2CE3D49F00B547D7 /* DrHouseIosProjectUITests */,
@@ -101,6 +134,9 @@
 		B2CF18462CE3D49E00B547D7 /* DrHouseIosProject */ = {
 			isa = PBXGroup;
 			children = (
+				B2CF189E2CE4260B00B547D7 /* SigninLogic */,
+				B2CF18982CE41EF900B547D7 /* repositories */,
+				B2CF18882CE4182A00B547D7 /* DataRemote */,
 				B2CF18472CE3D49E00B547D7 /* AppDelegate.swift */,
 				B2CF18492CE3D49E00B547D7 /* SceneDelegate.swift */,
 				B2CF184B2CE3D49E00B547D7 /* ViewController.swift */,
@@ -109,6 +145,9 @@
 				B2CF18552CE3D49F00B547D7 /* LaunchScreen.storyboard */,
 				B2CF18582CE3D49F00B547D7 /* Info.plist */,
 				B2CF18502CE3D49E00B547D7 /* DrHouseIosProject.xcdatamodeld */,
+				B2CF18802CE3EE2100B547D7 /* ViewControllerSignUP.swift */,
+				B2CF18842CE408F500B547D7 /* ViewControllerResetPassword.swift */,
+				B2CF18862CE40E8400B547D7 /* ViewControllerForgetPassword.swift */,
 			);
 			path = DrHouseIosProject;
 			sourceTree = "<group>";
@@ -130,6 +169,51 @@
 			path = DrHouseIosProjectUITests;
 			sourceTree = "<group>";
 		};
+		B2CF18882CE4182A00B547D7 /* DataRemote */ = {
+			isa = PBXGroup;
+			children = (
+				72D2FC362CED5CB0003A8A49 /* homeSwiftUIView.swift */,
+				72D2FC342CED5C77003A8A49 /* NavView.swift */,
+				B2CF18902CE4196300B547D7 /* Sevice */,
+				B2CF18892CE4187300B547D7 /* Entitys */,
+			);
+			path = DataRemote;
+			sourceTree = "<group>";
+		};
+		B2CF18892CE4187300B547D7 /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF188A2CE418A300B547D7 /* User.swift */,
+				B2CF188C2CE418CE00B547D7 /* LoginRequest.swift */,
+				B2CF188E2CE418F000B547D7 /* LoginResponse.swift */,
+			);
+			path = Entitys;
+			sourceTree = "<group>";
+		};
+		B2CF18902CE4196300B547D7 /* Sevice */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF18912CE4198B00B547D7 /* ApiServices.swift */,
+			);
+			path = Sevice;
+			sourceTree = "<group>";
+		};
+		B2CF18982CE41EF900B547D7 /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF18992CE41F1600B547D7 /* UserRepository.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		B2CF189E2CE4260B00B547D7 /* SigninLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF189F2CE4264500B547D7 /* signinViewModel.swift */,
+			);
+			path = SigninLogic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +230,9 @@
 			dependencies = (
 			);
 			name = DrHouseIosProject;
+			packageProductDependencies = (
+				72D2FC2E2CED225A003A8A49 /* Alamofire */,
+			);
 			productName = DrHouseIosProject;
 			productReference = B2CF18442CE3D49E00B547D7 /* DrHouseIosProject.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +305,9 @@
 				Base,
 			);
 			mainGroup = B2CF183B2CE3D49E00B547D7;
+			packageReferences = (
+				72D2FC2D2CED2259003A8A49 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B2CF18452CE3D49E00B547D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +351,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D2FC332CED2CA1003A8A49 /* CartView.swift in Sources */,
+				B2CF188D2CE418CE00B547D7 /* LoginRequest.swift in Sources */,
+				B2CF18812CE3EE2100B547D7 /* ViewControllerSignUP.swift in Sources */,
+				B2CF189A2CE41F1600B547D7 /* UserRepository.swift in Sources */,
+				B2CF18A02CE4264500B547D7 /* signinViewModel.swift in Sources */,
 				B2CF184C2CE3D49E00B547D7 /* ViewController.swift in Sources */,
+				72D2FC392CED6284003A8A49 /* WelcomeBackView.swift in Sources */,
 				B2CF18482CE3D49E00B547D7 /* AppDelegate.swift in Sources */,
+				72D2FC372CED5CB0003A8A49 /* homeSwiftUIView.swift in Sources */,
+				72D2FC312CED268C003A8A49 /* Pharmacie.swift in Sources */,
+				72D2FC352CED5C77003A8A49 /* NavView.swift in Sources */,
+				B2CF188F2CE418F000B547D7 /* LoginResponse.swift in Sources */,
+				B2CF18872CE40E8400B547D7 /* ViewControllerForgetPassword.swift in Sources */,
+				B2CF188B2CE418A300B547D7 /* User.swift in Sources */,
+				B2CF18922CE4198B00B547D7 /* ApiServices.swift in Sources */,
 				B2CF18522CE3D49E00B547D7 /* DrHouseIosProject.xcdatamodeld in Sources */,
 				B2CF184A2CE3D49E00B547D7 /* SceneDelegate.swift in Sources */,
+				B2CF18852CE408F500B547D7 /* ViewControllerResetPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +557,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +585,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72D2FC2D2CED2259003A8A49 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72D2FC2E2CED225A003A8A49 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72D2FC2D2CED2259003A8A49 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B2CF18502CE3D49E00B547D7 /* DrHouseIosProject.xcdatamodeld */ = {

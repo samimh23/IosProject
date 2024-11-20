@@ -1,40 +1,46 @@
 import UIKit
-import Combine
 
-class ViewController: UIViewController, UITextFieldDelegate {
-    // TextField outlets
-    @IBOutlet weak var emailfeald: UITextField!
+class ViewControllerSignUP: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var namefeald: UITextField!
     @IBOutlet weak var passwordfeald: UITextField!
+    @IBOutlet weak var emailfeald: UITextField!
     
-    // Feedback Labels
-    @IBOutlet weak var passwordFeedbackLabel: UILabel!
+    // Labels for displaying validation feedback
+    
+    @IBOutlet weak var nameFeedbackLabel: UILabel!
     @IBOutlet weak var emailFeedbackLabel: UILabel!
-    
-    // ViewModel and Combine Subscription
-    private var viewModel: SigninViewModel!
-    private var cancellables = Set<AnyCancellable>()
+    @IBOutlet weak var passwordFeedbackLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set the text field delegates
+        namefeald.delegate = self
         passwordfeald.delegate = self
         emailfeald.delegate = self
         
+        // Add target for real-time validation
+        namefeald.addTarget(self, action: #selector(validateName), for: .editingChanged)
         passwordfeald.addTarget(self, action: #selector(validatePassword), for: .editingChanged)
         emailfeald.addTarget(self, action: #selector(validateEmail), for: .editingChanged)
-        
-        let userRepository = UserRepository() // Initialize UserRepository
-        viewModel = SigninViewModel(userRepository: userRepository)
-        
-        // Observe UI state changes
-        viewModel.$loginUiState
-            .sink { [weak self] state in
-                self?.handleLoginUiState(state)
-            }
-            .store(in: &cancellables)
     }
     
-    // Validation for password
+    // Validation function for name field (only letters)
+    @objc func validateName() {
+        if let nameText = namefeald.text, !nameText.isEmpty {
+            let isValid = nameText.range(of: "^[a-zA-Z]+$", options: .regularExpression) != nil
+            namefeald.layer.borderColor = isValid ? UIColor.green.cgColor : UIColor.red.cgColor
+            nameFeedbackLabel.text = isValid ? "Valid name" : "Invalid name (only letters allowed)"
+            nameFeedbackLabel.textColor = isValid ? .green : .red
+        } else {
+            namefeald.layer.borderColor = UIColor.red.cgColor
+            nameFeedbackLabel.text = "Name cannot be empty"
+            nameFeedbackLabel.textColor = .red
+        }
+    }
+    
+    // Validation function for password field (minimum 6 characters)
     @objc func validatePassword() {
         if let passwordText = passwordfeald.text {
             let isValid = passwordText.count >= 6
@@ -47,7 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // Validation for email
+    // Validation function for email field (basic email format)
     @objc func validateEmail() {
         if let emailText = emailfeald.text, !emailText.isEmpty {
             let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -62,28 +68,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func loginBtn(_ sender: Any) {
-        guard let email = emailfeald.text, let password = passwordfeald.text else { return }
-        viewModel.loginUser(email: email, password: password)
-    }
-    
+    // UITextFieldDelegate method to limit characters or other constraints (optional)
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return true
-    }
-    
-    private func handleLoginUiState(_ state: LoginUiState) {
-        if state.isLoggedIn {
-            print("User logged in successfully with token: \(state.token ?? "")")
-            // Navigate to another screen or perform an action
-        } else if let errorMessage = state.errorMessage {
-            showError(errorMessage)
-            print(errorMessage)
+        if textField == namefeald {
+            // Allow only letters in the name field
+            let allowedCharacters = CharacterSet.letters
+            let characterSet = CharacterSet(charactersIn: string)
+            return allowedCharacters.isSuperset(of: characterSet)
         }
-    }
-    
-    private func showError(_ message: String) {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+        return true
     }
 }
