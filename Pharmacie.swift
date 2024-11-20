@@ -1,5 +1,7 @@
 import SwiftUI
 
+import SwiftUI
+
 struct PharmacyShopView: View {
     @State private var products = [
         Product(name: "Xanax", price: 2.5, image: "xanax", category: "Vitamins"),
@@ -24,9 +26,9 @@ struct PharmacyShopView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                // Welcome Back Section
-                WelcomeBackView(username: "Eric Gonzales") // Replace with dynamic username
+            VStack(spacing: 0) {  // Adjust spacing here to control the space between sections
+                // Welcome Back Section with Avatar
+                WelcomeBackView(username: "Eric Gonzales", avatarImage: "123") // Replace with dynamic username
                 
                 // Hero Card
                 VStack(alignment: .leading, spacing: 12) {
@@ -54,6 +56,19 @@ struct PharmacyShopView: View {
                     .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 4)
                 }
                 .padding(.horizontal)
+                
+                // Search Bar Section
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundColor(.gray)
+                    TextField("Search products...", text: .constant(""))
+                        .padding(10)
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(10)
+                        .foregroundColor(.primary)
+                }
+                .padding(.horizontal)
+                .padding(.top, 10)  // Adjust this padding for the search area
                 
                 // Horizontal Category Grid
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -89,7 +104,6 @@ struct PharmacyShopView: View {
                     }
                     .padding(.horizontal)
                 }
-                .navigationTitle("Pharmacy Shop")
                 
                 // Cart Navigation
                 NavigationLink(destination: CartView(cart: cart)) {
@@ -109,6 +123,7 @@ struct PharmacyShopView: View {
         }
     }
 }
+
 
 
 struct ProductCard: View {
@@ -169,8 +184,6 @@ struct Product: Identifiable {
     let image: String
     let category: String
 }
-
-
 
 struct PharmacyShopView_Previews: PreviewProvider {
     static var previews: some View {

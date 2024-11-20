@@ -172,8 +172,6 @@
 		B2CF18882CE4182A00B547D7 /* DataRemote */ = {
 			isa = PBXGroup;
 			children = (
-				72D2FC362CED5CB0003A8A49 /* homeSwiftUIView.swift */,
-				72D2FC342CED5C77003A8A49 /* NavView.swift */,
 				B2CF18902CE4196300B547D7 /* Sevice */,
 				B2CF18892CE4187300B547D7 /* Entitys */,
 			);
@@ -183,6 +181,8 @@
 		B2CF18892CE4187300B547D7 /* Entitys */ = {
 			isa = PBXGroup;
 			children = (
+				72D2FC362CED5CB0003A8A49 /* homeSwiftUIView.swift */,
+				72D2FC342CED5C77003A8A49 /* NavView.swift */,
 				B2CF188A2CE418A300B547D7 /* User.swift */,
 				B2CF188C2CE418CE00B547D7 /* LoginRequest.swift */,
 				B2CF188E2CE418F000B547D7 /* LoginResponse.swift */,
